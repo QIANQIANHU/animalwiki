@@ -1,10 +1,13 @@
 $(document).ready(function() {
-  var age = parseInt(prompt("How old are you?"));
+  $("button#panda").click(function() {
+    $(".panda .description").toggle();
+  });
 
-    if (age >=18) {
-      $('#adults').show();
-    } else {
-      $('#minors').show();
-    }
+  $("button#orca").click(function() {
+    $(".orca .description").toggle();
+  });
 
+  $("button#bat").click(function() {
+    $(".bat .description").toggle();
+  });
 });
